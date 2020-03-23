@@ -19,7 +19,7 @@ run `pip3 install -r requirements.txt` to install all the dependencies.
 
 ### Data
 All the dataloading is handled at `incremental_dataloader.py` and the experimental setting for the datasets are handled at `args` class in `train_<dataset>.py`. `args` class contains all the hyper-parameters settings to run the experiment.
-
+   `
 class args:
 
     checkpoint = "results/cifar100/meta2_celeb_T10_7"
@@ -46,7 +46,7 @@ class args:
     mu = 1
     beta = 1
     r = 1
-    
+    `
     
 ### Usage
 To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. 
