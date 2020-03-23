@@ -18,33 +18,27 @@ This code requires the following:
 run `pip3 install -r requirements.txt` to install all the dependencies. 
 
 ### Data
-All the dataloading is handled at `incremental_dataloader.py` and the experimental setting for the datasets are handled at `args` class in `train_<dataset>.py`. `args` class contains all the hyper-parameters settings to run the experiment.
+All the dataloading is handled at `incremental_dataloader.py` and the experimental setting for the datasets are handled at `args` class in `train_<dataset>.py`. `args` class contains all the hyper-parameters settings to run the experiment. For example, consider the following:
    
-`class args:
-    checkpoint = "results/cifar100/meta2_celeb_T10_7"
+ ``` 
+class args:
+    dataset = "cifar100"
+    checkpoint = "results/cifar100/test1"
     savepoint = "models/" + "/".join(checkpoint.split("/")[1:])
-    data_path = "../Datasets/MS1M/imgs/"
-    num_class = 10000
-    class_per_task = 1000
+    data_path = "../Datasets/CIFAR100/"
+    
+    num_class = 100
+    class_per_task = 10
     num_task = 10
-    test_samples_per_class = 100
-    dataset = "celeb"
-    optimizer = "radam"
-    epochs = 70
-    lr = 0.01
-    train_batch = 256
-    test_batch = 100
-    workers = 16
-    sess = 0
-    schedule = [20,40,60]
-    gamma = 0.2
-    random_classes = False
-    validation = 0
-    memory = 50000
-    mu = 1
+
+    memory = 2000
     beta = 1
     r = 1
-    `
+    .
+    .
+```
+Here, `dataset` can be set to `cifar100`, `cub200`, `imagenet`, `celeb`, `mnist` and `svhn`. `checkpoint` and `savepoint` saves the records of performance and trained models, respectively. `data_path` points to the location of the dataset downloaded, if it is not downloaded previously, the script will download and extract at the pointed location. As mentioned in our paper, each dataset can be run with different class incremental settings, hence the total number of classes included in the experiment, number of classess assigned per each task and the total number of tasks are defined at `num_class`,  `class_per_task`, and `num_task`.
+
     
 ### Usage
 To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. 
