@@ -46,6 +46,7 @@ Here, `dataset` can be set to the following:
 - "celeb"
 - "mnist"
 - "svhn"
+
 `checkpoint` and `savepoint` saves the records of performance and trained models, respectively. `data_path` points to the location of the dataset downloaded, if it is not downloaded previously, the script will download and extract at the pointed location. As mentioned in our paper, each dataset can be run with different class incremental settings, hence the total number of classes included in the experiment, number of classess assigned per each task and the total number of tasks are defined at `num_class`,  `class_per_task`, and `num_task`. Also, `memory` is the upper bound for the number of exemplars. Further, `beta` is the decay-rate, which controlls the amount of fusion between old parameters and current parameters and `r` is the number of inner loop updates.
     
 ### Usage
