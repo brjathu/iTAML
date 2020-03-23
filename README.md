@@ -7,13 +7,13 @@ This code provides an implementation for iTAML : An Incremental Task-Agnostic Me
 
 ### Dependencies
 This code requires the following:
-*matplotlib==3.2.1
-*numpy==1.18.2
-*pandas==1.0.3
-*Pillow==7.0.0
-*scipy==1.4.1
-*torch==1.4.0
-*torchvision==0.5.0
+* matplotlib==3.2.1
+* numpy==1.18.2
+* pandas==1.0.3
+* Pillow==7.0.0
+* scipy==1.4.1
+* torch==1.4.0
+* torchvision==0.5.0
 
 run `pip3 install -r requirements.txt` to install all the dependencies. 
 
