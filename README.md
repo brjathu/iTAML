@@ -19,9 +19,8 @@ run `pip3 install -r requirements.txt` to install all the dependencies.
 
 ### Data
 All the dataloading is handled at `incremental_dataloader.py` and the experimental setting for the datasets are handled at `args` class in `train_<dataset>.py`. `args` class contains all the hyper-parameters settings to run the experiment.
-   `
-class args:
-
+   
+`class args:
     checkpoint = "results/cifar100/meta2_celeb_T10_7"
     savepoint = "models/" + "/".join(checkpoint.split("/")[1:])
     data_path = "../Datasets/MS1M/imgs/"
@@ -31,7 +30,6 @@ class args:
     test_samples_per_class = 100
     dataset = "celeb"
     optimizer = "radam"
-    
     epochs = 70
     lr = 0.01
     train_batch = 256
