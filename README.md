@@ -18,10 +18,10 @@ This code requires the following:
 run `pip3 install -r requirements.txt` to install all the dependencies. 
 
 ### Data
-For the Omniglot and MiniImagenet data, see the usage instructions in `data/omniglot_resized/resize_images.py` and `data/miniImagenet/proc_images.py` respectively.
+All the dataloading is handled at `incremental_dataloader.py` and the experimental setting for the datasets are handled at `args` class in `train_<dataset>.py`. `args` class contains all the hyper-parameters settings to run the experiment.
 
 ### Usage
-To run the code, see the usage instructions at the top of `main.py`.
+To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. 
 
 ### Contact
 To ask questions or report issues, please open an issue on the [issues tracker](https://github.com/brjathu/iTAML/issues).
