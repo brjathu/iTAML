@@ -55,6 +55,8 @@ To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. 
 
 ### Results
 
+We perform extensive experiments on five datasets in a class-incremental setting, leading to significant improvements over the state of the art methods (e.g.,a  21.3%  boost  on  CIFAR100  with  10  incremental  tasks). Specifically, on large-scale  datasets  that  generally  prove difficult cases for incremental learning, our approach delivers absolute gains as high as 19.1% and 7.4% on ImageNetand MS-Celeb datasets, respectively.
+
 <p align="center"><img src="./utils/figs/results3.png" width="800"></p>
 <p align="center">(b) iTAML performance on CIFAR100 with class incremental setting of 5,10,20 classes per task respectivly.</p>
 <br/>
