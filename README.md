@@ -55,6 +55,12 @@ To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. 
 
 ### Results
 
+<p align="center"><img src="./utils/figs/results3.png" width="800"></p>
+<p align="center">(b) iTAML performance on CIFAR100 with class incremental setting of 5,10,20 classes per task respectivly.</p>
+<br/>
+<br/>
+<p align="center"><img src="./utils/figs/results.png" width="800"></p>
+<p align="center">(c) iTAML iTAML performance on ImageNet-100, ImageNet-1K and MS-Celeb-10K.</p>
 
 
 ### Contact
