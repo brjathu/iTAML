@@ -1,6 +1,10 @@
 # iTAML : An Incremental Task-Agnostic Meta-learning Approach
 Official implementation of "iTAML : An Incremental Task-Agnostic Meta-learning Approach". (CVPR 2020) [(paper link)](http://papers.nips.cc/paper/9429-random-path-selection-for-continual-learning). 
 
+<p align="center"><img src="./utils/figs/front.png"></p>
+<p align="center">(a) iTAML overall learning process</p>
+<br/>
+<br/> 
 
 iTAML : An Incremental Task-Agnostic Meta-learning Approach (accepted at Conference on Computer Vision and Pattern Recognition, Seattle, Washington, 2020), hypothesize that generalization is a key factor for continual learning. In this pursuit, we learn a set of generalized parameters, that are neither specific to old nor new tasks by introducing a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a task-agnostic meta-update rule which avoids catastrophic  forgetting. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with  just a single update. 
 
@@ -50,7 +54,11 @@ Here, `dataset` can be set to the following:
 `checkpoint` and `savepoint` saves the records of performance and trained models, respectively. `data_path` points to the location of the dataset downloaded, if it is not downloaded previously, the script will download and extract at the pointed location. As mentioned in our paper, each dataset can be run with different class incremental settings, hence the total number of classes included in the experiment, number of classess assigned per each task and the total number of tasks are defined at `num_class`,  `class_per_task`, and `num_task`. Also, `memory` is the upper bound for the number of exemplars. Further, `beta` is the decay-rate, which controlls the amount of fusion between old parameters and current parameters and `r` is the number of inner loop updates.
     
 ### Usage
-To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. 
+To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. begins with `0`.
+
+### Results
+
+
 
 ### Contact
 To ask questions or report issues, please open an issue on the [issues tracker](https://github.com/brjathu/iTAML/issues).
