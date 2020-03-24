@@ -62,7 +62,7 @@ We perform extensive experiments on five datasets in a class-incremental setting
 <br/>
 <br/>
 <p align="center"><img src="./utils/figs/results.png" width="800"></p>
-<p align="center">(c) iTAML iTAML performance on ImageNet-100, ImageNet-1K and MS-Celeb-10K.</p>
+<p align="center">(c) iTAML performance on ImageNet-100, ImageNet-1K and MS-Celeb-10K.</p>
 
 
 ### We Credit
