@@ -1,9 +1,9 @@
 # iTAML : An Incremental Task-Agnostic Meta-learning Approach
 Official implementation of "iTAML : An Incremental Task-Agnostic Meta-learning Approach". (CVPR 2020) [(paper link)](http://papers.nips.cc/paper/9429-random-path-selection-for-continual-learning). 
 
-iTAML : An Incremental Task-Agnostic Meta-learning Approach (accepted at Conference on Computer Vision and Pattern Recognition, Seattle, Washington, 2020), hypothesize that generalization is a key factor for continual learning. In this pursuit, we learn a set of generalized parameters, that are neither specific to old nor new tasks by introducing a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a task-agnostic meta-update rule which avoids catastrophic  forgetting. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with  just a single update. 
+iTAML : An Incremental Task-Agnostic Meta-learning Approach (accepted at Conference on Computer Vision and Pattern Recognition, Seattle, Washington, 2020), hypothesize that generalization is a key factor for continual learning. In this pursuit, we learn a set of generalized parameters, that are neither specific to old nor new tasks by introducing a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a task-agnostic meta-update rule which avoids catastrophic forgetting. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with just a single update. 
 
-This code provides an implementation for iTAML. This repository is implemented using pytorch and it includes code for running the incremental learning domain experiments on MNIST, SVHN, CIFAR100, ImageNet and MS-Celeb-10K.
+This code provides an implementation for iTAML. This repository is implemented using PyTorch and it includes code for running the incremental learning domain experiments on MNIST, SVHN, CIFAR100, ImageNet, and MS-Celeb-10K.
 
 <p align="center"><img src="./utils/figs/front.png" width="400"></p>
 <p align="center">(a) iTAML overall learning process</p>
@@ -48,14 +48,14 @@ Here, `dataset` can be set to the following:
 - "mnist"
 - "svhn"
 
-`checkpoint` and `savepoint` saves the records of performance and trained models, respectively. `data_path` points to the location of the dataset downloaded, if it is not downloaded previously, the script will download and extract at the pointed location. As mentioned in our paper, each dataset can be run with different class incremental settings, hence the total number of classes included in the experiment, number of classess assigned per each task and the total number of tasks are defined at `num_class`,  `class_per_task`, and `num_task`. Also, `memory` is the upper bound for the number of exemplars. Further, `beta` is the decay-rate, which controlls the amount of fusion between old parameters and current parameters and `r` is the number of inner loop updates.
+`checkpoint` and `savepoint` saves the records of performance and trained models, respectively. `data_path` points to the location of the dataset downloaded, if it is not downloaded previously, the script will download and extract at the pointed location. As mentioned in our paper, each dataset can be run with different class incremental settings, hence the total number of classes included in the experiment, number of classes assigned per each task and the total number of tasks are defined at `num_class`,  `class_per_task`, and `num_task`. Also, `memory` is the upper bound for the number of exemplars. Further, `beta` is the decay-rate, which controls the amount of fusion between old parameters and current parameters and `r` is the number of inner loop updates.
     
 ### Usage
 To run the experiment, run `CUDA_VISIBLE_DEVICES=0 python3 train_cifar.py [x]`. Here `[x]` is a system argument of the starting task id. begins with `0`.
 
 ### Results
 
-We perform extensive experiments on five datasets in a class-incremental setting, leading to significant improvements over the state of the art methods (e.g.,a  21.3%  boost  on  CIFAR100  with  10  incremental  tasks). Specifically, on large-scale  datasets  that  generally  prove difficult cases for incremental learning, our approach delivers absolute gains as high as 19.1% and 7.4% on ImageNetand MS-Celeb datasets, respectively.
+We perform extensive experiments on five datasets in a class-incremental setting, leading to significant improvements over the state of the art methods (e.g.,a  21.3%  boost on  CIFAR100  with  10  incremental tasks). Specifically, on large-scale datasets  that generally prove difficult cases for incremental learning, our approach delivers absolute gains as high as 19.1% and 7.4% on ImageNetand MS-Celeb datasets, respectively.
 
 <p align="center"><img src="./utils/figs/results3.png" width="800"></p>
 <p align="center">(b) iTAML performance on CIFAR100 with class incremental setting of 5,10,20 classes per task respectivly.</p>
