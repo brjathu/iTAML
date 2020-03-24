@@ -66,7 +66,7 @@ We perform extensive experiments on five datasets in a class-incremental setting
 
 
 ### We Credit
-Thanks to https://github.com/khurramjaved96/incremental-learning , for the preliminary implementation of the data loader.
+Thanks to https://github.com/khurramjaved96/incremental-learning, for the preliminary implementation of the data loader.
 
 ### Contact
 Jathushan Rajasegaran - jathushan.rajasegaran@inceptioniai.org or brjathu@gmail.com
@@ -74,3 +74,15 @@ Jathushan Rajasegaran - jathushan.rajasegaran@inceptioniai.org or brjathu@gmail.
 To ask questions or report issues, please open an issue on the [issues tracker](https://github.com/brjathu/iTAML/issues).
 <br/>
 Discussions, suggestions and questions are welcome!
+
+
+## Citation
+```
+@article{rajasegaran2019itaml,
+  title={iTAML : An Incremental Task-Agnostic Meta-learning Approach},
+  author={Rajasegaran, Jathushan and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Shah, Mubarak},
+  journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month = {June},
+  year = {2020}
+}
+```
