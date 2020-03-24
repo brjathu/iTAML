@@ -65,6 +65,12 @@ We perform extensive experiments on five datasets in a class-incremental setting
 <p align="center">(c) iTAML iTAML performance on ImageNet-100, ImageNet-1K and MS-Celeb-10K.</p>
 
 
-### Contact
-To ask questions or report issues, please open an issue on the [issues tracker](https://github.com/brjathu/iTAML/issues).
+### We Credit
+Thanks to https://github.com/khurramjaved96/incremental-learning , for the preliminary implementation of the data loader.
 
+### Contact
+Jathushan Rajasegaran - jathushan.rajasegaran@inceptioniai.org or brjathu@gmail.com
+<br/>
+To ask questions or report issues, please open an issue on the [issues tracker](https://github.com/brjathu/iTAML/issues).
+<br/>
+Discussions, suggestions and questions are welcome!
