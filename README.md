@@ -78,7 +78,7 @@ Discussions, suggestions and questions are welcome!
 
 ## Citation
 ```
-@article{rajasegaran2019itaml,
+@article{rajasegaran2020itaml,
   title={iTAML : An Incremental Task-Agnostic Meta-learning Approach},
   author={Rajasegaran, Jathushan and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Shah, Mubarak},
   journal={The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
