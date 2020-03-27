@@ -1,5 +1,5 @@
 # iTAML : An Incremental Task-Agnostic Meta-learning Approach
-Official implementation of "iTAML : An Incremental Task-Agnostic Meta-learning Approach". (CVPR 2020) [(paper link)](http://papers.nips.cc/paper/9429-random-path-selection-for-continual-learning). 
+Official implementation of "iTAML : An Incremental Task-Agnostic Meta-learning Approach". (CVPR 2020) [(paper link)](https://arxiv.org/abs/2003.11652). 
 
 iTAML : An Incremental Task-Agnostic Meta-learning Approach (accepted at IEEE Conference on Computer Vision and Pattern Recognition, Seattle, Washington, 2020), hypothesizes that generalization is a key factor for continual learning. In this pursuit, we learn a set of generalized parameters, that are neither specific to old nor new tasks by introducing a novel meta-learning approach that seeks to maintain an equilibrium between all the encountered tasks. This is ensured by a task-agnostic meta-update rule which avoids catastrophic forgetting. When presented with a continuum of data, our model automatically identifies the task and quickly adapts to it with just a single update. 
 
