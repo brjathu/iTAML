@@ -332,6 +332,7 @@ class iCIFAR10(DataHandler):
         transforms.RandomRotation(10),
         transforms.ColorJitter(brightness=63 / 255),
         transforms.ToTensor(),
+        transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
     ]
     common_transforms = [
         transforms.ToTensor(),
